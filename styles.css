@@ -1,0 +1,104 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    height: 100%;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.header-container h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.header-container p {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    margin-top: 2rem;
+    background-color: #e74c3c;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+}
+
+#about, #portfolio {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#about {
+    background-color: #222;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    color: #ccc;
+}
+
+#portfolio {
+    background-color: #333;
+}
+
+#portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+footer {
+    background-color: #111;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    color: #aaa;
+}
+
+footer a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #c0392b;
+}
